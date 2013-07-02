@@ -13,7 +13,7 @@ void* serve_client(void* connection) {
         fseek(file, 0L, SEEK_END);
         size = ftell(file);
         fseek(file, 0L, SEEK_SET);
-        printf("File size: %ld\n", size);
+        printf("Size of file: %ld\n", size);
         buffer = (char*) malloc(sizeof(char) * size);
         fread(buffer, sizeof(char), size, file);
     }
