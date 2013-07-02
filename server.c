@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 #ifdef PTHREAD
 		pthread_create(&pt, NULL, serve_client, (void *) &connfd);
-		printf("\nClient connected.\n");
+		printf("\nClient connectd.\n");
 		fflush(stdout);
 #else
 		forkID = fork();
